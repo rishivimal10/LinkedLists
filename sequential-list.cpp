@@ -3,7 +3,7 @@
 
 SequentialList::SequentialList(unsigned int cap)
 {
-    data_ = new int [cap];
+    data_ = new DataType [cap];
     capacity_ = cap;
 }
 
@@ -118,6 +118,7 @@ bool SequentialList::insert_back(DataType val)
     else{
         data_[size_] = val;
         size_+= 1;
+        return true;
     }
 }
 
