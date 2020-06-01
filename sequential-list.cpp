@@ -5,6 +5,7 @@ SequentialList::SequentialList(unsigned int cap)
 {
     data_ = new DataType [cap];
     capacity_ = cap;
+    size_ = 0;
 }
 
 SequentialList::~SequentialList()
