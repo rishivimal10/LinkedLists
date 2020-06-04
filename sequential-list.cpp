@@ -65,7 +65,7 @@ unsigned int SequentialList::search(DataType val) const
 void SequentialList::print() const
 {
     for (int i = 0; i < size_; i++){
-        std::cout << data_ [i];
+        std::cout << data_ [i] << ", ";
     }
 }
 
