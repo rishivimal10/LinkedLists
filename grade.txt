@@ -1,0 +1,26 @@
+{'first': 'Rishi', 'last': 'Vimalendran', 'watiam': 'rvimalen', 'student': 20826980, 'email': 'rvimalen@uwaterloo.ca'}
+*******************************
+SEQUENTIAL LIST TESTING RESULTS 
+******************************* 
+Test1: New empty list is valid
+TEST PASSED
+Test2: insert_front() and insert_back() on zero-element list
+TEST PASSED
+Test3: select() and search() work properly
+TEST PASSED
+Test4: remove_front() and remove_back() on one-element list
+TEST PASSED
+Test5: Inserting too many elements should fail
+TEST PASSED
+Test6: insert_front() keeps moving elements forward
+TEST PASSED
+Test7: inserting at different positions in the list
+TEST PASSED
+Test8: try to remove too many elements, then add a few elements
+TEST PASSED
+Test9: lots of inserts and deletes, all of them valid
+TEST PASSED
+Test10: lots of inserts and deletes, some of them invalid
+TEST PASSED
+
+Total grade: 40
