@@ -10,16 +10,23 @@ using namespace std;
 
 int main() {
 
-    int A [] = {-9, 1};
-    int size = 2;
+    int A [] = {0, 0, 2};
+    int size = 3;
 
-    int B [] = {9, 1};
-    int size2 = 2;
+    int C [] = {0,0,0,1};
+    Polynomial other (C, 4);
+    //other.print();
+
+    int B [] = {0, 0, 0, 5};
+    int size2 = 4;
     Polynomial* rhs = new Polynomial (A, size);
     Polynomial* ptr = new Polynomial (B, size2);
 
+    rhs->print();
+    ptr->print();
 
-    Polynomial* prod = rhs -> mul(ptr);
+
+    Polynomial* prod = rhs -> sub(ptr);
     prod -> print();
 
 }

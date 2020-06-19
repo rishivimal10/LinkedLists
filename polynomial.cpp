@@ -38,7 +38,6 @@ Polynomial* Polynomial::add(Polynomial *rhs) {
                 A[i] = this->list_->select(i);
         }
         Polynomial* sum_ = new Polynomial(A, degree_this);
-        sum_ -> list_ -> print();
         return sum_;
     }
 
@@ -54,7 +53,6 @@ Polynomial* Polynomial::add(Polynomial *rhs) {
                 A[i] = rhs->list_->select(i);
         }
         Polynomial* sum_ = new Polynomial(A, degree_rhs);
-        sum_ -> list_ -> print();
         return sum_;
     }
 }
@@ -84,7 +82,6 @@ Polynomial* Polynomial::sub(Polynomial *rhs) {
                 A[i] = this->list_->select(i);
         }
         Polynomial* diff_ = new Polynomial(A, degree_this);
-        diff_ -> list_ -> print();
         return diff_;
     }
 
@@ -100,7 +97,7 @@ Polynomial* Polynomial::sub(Polynomial *rhs) {
                 A[i] = (-1)*rhs->list_->select(i);
         }
         Polynomial* diff_ = new Polynomial(A, degree_rhs);
-        diff_ -> list_ -> print();
+
         return diff_;
     }
 }
@@ -131,13 +128,13 @@ void Polynomial::print() {
     int ctr = -1;
     for (int i = size_ - 1; i >= 0; i--){
 
-
         if (ctr == -1 && list_ -> select(i) == 0)
             ctr = i;
 
         if (ctr != -1 && list_ -> select(i) != 0)
             ctr = -1;
     }
+
     for (int i = size_ - 1; i >= 0; i--){
 
         if (list_->select(i) != 0){
@@ -149,7 +146,6 @@ void Polynomial::print() {
             if (i > ctr + 1)
                 std::cout << " + ";
         }
-
     }
-
+    std::cout << "\n";
 }
